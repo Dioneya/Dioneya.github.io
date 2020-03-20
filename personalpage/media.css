@@ -54,4 +54,14 @@
         color: gray;
         max-width: 100%;
     }
+    .inst-photo{
+        flex-wrap: wrap;
+    }
+    .inst-photo img{
+        width: 100%;
+    }
+    
+    .follow-my-inst h3{
+        font-size: 3rem;
+    }
 }
