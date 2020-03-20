@@ -44,4 +44,14 @@
         width: 90%;
         margin-left: 0;
     }
+    
+    .about-me p{
+        text-align: left;
+        max-width: 100%;
+    }
+    .about-me p.about-me-info{
+        font-size: 2rem;
+        color: gray;
+        max-width: 100%;
+    }
 }
