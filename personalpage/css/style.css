@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap');
+
+html{
+    font-size: 10px
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+/*Стили для менюхи*/
+aside{
+    width: 22%;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.avatar-image{
+    width: 100%;
+    height: 100vw;
+    max-width: 16rem;
+    max-height: 16rem;
+    background-image: url(test.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 180%;
+}
+
+.menu {
+    margin-right: 15%;
+}
+
+#menu li{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    border-bottom: 0px solid white;
+}
+
+#menu a{
+    color: lightgrey;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+#menu a:after {
+	display: block;
+	position: absolute;
+	left: 50%;
+    bottom: 0;/*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #91a996; /*задаём цвет линии*/
+	content: "";
+	transition: 0.3s ; /*задаём время анимации*/
+}
+#menu a:hover{
+    color: white;
+}
+
+#menu a:hover:after,
+#menu a:focus:after {
+	width: 50%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+#menu a:before {
+	display: block;
+	position: absolute;
+	right: 50%;
+    bottom: 0;/*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #91a996; /*задаём цвет линии*/
+	content: "";
+	transition:0.3s; /*задаём время анимации*/
+}
+
+#menu a:hover:before,
+#menu a:focus:before {
+	width: 50%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+#menu a.active-li{
+    color: white;
+}
+
+#menu a.active-li:after{
+    width: 50%;
+}
+
+#menu a.active-li:before{
+    width: 50%;
+}
+
+
+
+/*Стили для мейн-контента*/
+#main{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#space{
+    width: 22%;
+    height: 100px;
+}
+
+content{
+    width: 78%;
+}
+
+.top-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.about-me p{
+    text-align: left;
+    max-width: 80%;
+}
+
+.hello{
+    font-size: 2.5rem;
+    color: gray;
+}
+
+.name{
+    font-size: 3rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.green{
+    color: #91a996;
+}
+
+.about-me p.about-me-info{
+    font-size: 2rem;
+    color: gray;
+    max-width: 80%;
+}
+
+.about-me h3{
+    font-size: 4rem;
+    color: gray;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+
+.info{
+    margin-left: 5rem;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row
+}
+
+.social-links a{
+    margin-right: 4rem;
+}
+
+.follow-my-inst{
+    width: 100%;
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inst-photo{
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 5rem;
+    
+}
+
+.inst-photo a{
+    width: 30%;
+}
+
+.inst-photo img{
+    width: 100%;
+}
+
+.follow-my-inst h3{
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.inst-photo a img:hover{
+    opacity: .3;
+    transition: .5s;
+}
+
+.icon{
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.icon:after {
+	display: block;
+	position: absolute;
+	left: 50%;
+    bottom: 0;/*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #91a996; /*задаём цвет линии*/
+	content: "";
+	transition: 0.3s ; /*задаём время анимации*/
+}
+.icon:hover{
+    color: white;
+}
+
+.icon:hover:after,
+.icon:focus:after {
+	width: 50%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.icon:before {
+	display: block;
+	position: absolute;
+	right: 50%;
+    bottom: 0;/*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #91a996; /*задаём цвет линии*/
+	content: "";
+	transition:0.3s; /*задаём время анимации*/
+}
+
+.icon:hover:before,
+.icon:focus:before {
+	width: 50%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+
+
+/* стили для футера*/
+
+footer{
+    font-size: 2rem;
+    color: #91a996;
+    background-color: black;
+}
+
+.copiright{
+    text-align: center;
+    padding: 2rem;
+}
