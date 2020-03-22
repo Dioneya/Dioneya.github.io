@@ -241,3 +241,16 @@ content{
     padding-bottom: 2rem;
 }
 
+
+/* стили для футера*/
+
+footer{
+    font-size: 2rem;
+    color: black;
+    background-color: #91a996;
+}
+
+.copiright{
+    text-align: center;
+    padding: 2rem;
+}
