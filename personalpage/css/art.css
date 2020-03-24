@@ -1,0 +1,120 @@
+
+
+content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-content-art{
+    width: 100%;
+    min-height: 200px;
+    background: #91a996;
+    margin: 0;
+}
+
+.head-content-art{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    color: black;
+    font-size: 4rem;
+    width: 70%;
+}
+
+.text b{
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.text b:after {
+	display: block;
+	position: absolute;
+	left: 0;
+    bottom: 0;/*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 100%;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: 0.3s ; /*задаём время анимации*/
+}
+
+.art-works{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.art-section{
+    width: 30%;
+    margin: 1.5rem;
+    max-height: 18vw;
+    position: relative;
+    
+}
+
+.overlay-section{
+    transition: .5s;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    background: #0000009e;
+    position: absolute;
+    width: 100%;
+    height: 18vw;
+}
+
+.overlay-section:hover{
+    transition: .5s;
+    opacity: 1;
+}
+
+.overlay-section h3{
+    color: white;
+    font-weight: 400;
+    bottom: 10%;
+    left: 10%;
+    font-size: 2rem;
+    position: absolute;
+}
+
+.art-section img{
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+}
+
+.chillbox img{
+    max-width: 50rem;
+    max-height: 50rem;
+}
+
+.link{
+    width: 30%;
+    max-height: 18vw;
+}
+
+@media only screen  and (max-width: 1000px) {
+    
+   .art-section{
+        width: 42%;
+        max-height: 30vw;
+
+    } 
+    .art-section img{
+        height: 30vw;
+    }
+    
+    .art-section a{
+        visibility: hidden;
+    }
+}
