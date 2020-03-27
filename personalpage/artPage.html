@@ -31,6 +31,15 @@
     <main id = "main">
         <div id="space"></div>
         <content>
+           <style type="text/css">#preloader>p{display:none;}#preloader_preload{display: block;position: fixed;z-index: 99999;top: 0;right: 0;width: 78%;height: 100%;min-width: 300px;background: #000000 url(http://hello-site.ru//main/images/preloads/rings.svg) center center no-repeat;background-size:128px;}
+               @media only screen  and (max-width: 1000px) {
+                   #preloader_preload{
+                       width: 100%;
+                   }
+               }
+    </style>
+        <div id="preloader"><div id="preloader_preload"></div></div>
+        <script type="text/javascript">var preloader = document.getElementById("preloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interpreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interpreloader);preloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);},1000);};</script>
             <div class="head-content-art">
                 <div class="text"><b>My artwokrs</b></div>
             </div>
@@ -178,10 +187,7 @@
         </div>
     </aside>
     <footer></footer>
-    <style type="text/css">#preloader>p{display:none;}#preloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #000000 url(http://hello-site.ru//main/images/preloads/rings.svg) center center no-repeat;background-size:128px;}
-    </style>
-        <div id="preloader"><div id="preloader_preload"></div></div>
-        <script type="text/javascript">var preloader = document.getElementById("preloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interpreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interpreloader);preloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);},5000);};</script>
+    
     <script src="js/slider.js"></script>
 </body>
 </html>

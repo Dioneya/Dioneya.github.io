@@ -50,7 +50,7 @@
     
     .about-me p{
         text-align: left;
-        max-width: 100%;
+        width: 100%;
     }
     .about-me p.about-me-info{
         font-size: 2rem;
