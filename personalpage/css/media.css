@@ -11,6 +11,9 @@
 }
 
 @media only screen  and (max-width: 1000px) {
+    .hamburger-menu{
+        visibility: visible;
+    }
     
     aside{
         visibility: hidden;
