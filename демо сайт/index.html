@@ -8,60 +8,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/852557c4e7/UntitledProject/style.css">
+    <link rel="stylesheet" href="css/burger.css">
     <title>Hello, world!</title>
     
   </head>
   <body>
-    <div class="header col-lg">
-        <div class="logo"><img src="img/logo.svg" alt=""></div>
-        <ul class="menu">
-            <li class="menu"><a href="">ШАПОЧКИ</a></li>
-            <li class="menu"><a href="">МЕД.ОДЕЖДА</a></li>
-            <li class="menu"><a href="">ОТЗЫВЫ</a></li>
-            <li class="menu"><a href="">КАК ЗАКАЗАТЬ</a></li>
-            <li class="menu"><a href="">О НАС</a></li>
-        </ul>
-        <div class="header-button"></div>
-    </div>
-    
-    
-    <content>
-        <section class="first-block col-lg-12">
-            <section class="first-block-content">
-                <div class="first-block-info-block col-lg-6">
-                    <span class="head h1">Авторская медицинская одежда</span>
-                    <p>Собственное производство с 2018г<br>Индивидуальные условия для оптовых покупателей</p>
-                    <div class="button-area">
-                        <a href="#"><div class="button rounded-pill">ОФОРМИТЬ ЗАКАЗ</div></a>
-                        <a href="#"><div class="button rounded-pill">ПРОСМОТРЕТЬ ВЕСЬ АССОРТИМЕНТ</div></a>
-                    </div>
-                    
-                </div>
-                <div class="first-block-info-block col-lg-6">
-                    <div class="first-block-info-img"></div>
-                    <span class="h4">Многоразовые тканевые маски!</span>
-                    <div class="button-area">
-                        <a href="#"><div class="button rounded-pill">ЗАКАЗАТЬ</div></a>
-                    </div>
-                    
-                </div>
-            </section>
-            <div class="overlay"></div>
-        </section>
-        <section class="main-idea col-lg-12">
-            <div class="text-container col-md-12 col-lg-8">
-                <p class="h3">" Основная идея IvaMed - желание разнообразить строгую медицинскую форму докторов, добавив в неё немного креатива и сделать её утончённо стильной.</p>
-                <p class="h3">Мы создаём необычные шапочки для врачей с яркими принтами и авторскую медицинскую одежду. Запустив свой проект, мы стали частью многих историй выздоравлений. "</p>
+    <header class="fixed-top">
+        <div class="pc-header col-lg-12">
+            <a href="" class="ml-5 pl-5"><img src="img/logo.svg" alt=""></a>
+            <nav class="w-100">
+                <ul class="d-flex flex-row justify-content-center flex-wrap">
+                    <li class="pl-2 pr-2"><a href="#">ШАПОЧКИ</a></li>
+                    <li class="pl-2 pr-2"><a href="#">МЕД.ОДЕЖДА</a></li>
+                    <li class="pl-2 pr-2"><a href="#">ОТЗЫВЫ</a></li>
+                    <li class="pl-2 pr-2"><a href="#">КАК ЗАКАЗАТЬ</a></li>
+                    <li class="pl-2 pr-2"><a href="#">О НАС</a></li>
+                </ul>
+            </nav>
+            <div class="mr-5 pr-5 ml-5">
+                <a href="#" class="mt-1 mr-5"><span class="icon-instagram site-menu-icon" style="font-size: 45px;"></span></a>
+                <a href="#"><button class="btn btn-primary rounded-pill pl-4 pr-4 pt-3 pb-3">КОНТАКТЫ</button></a>
             </div>
-            <div class="img-container col-md-8 col-lg-4">
-                <img src="img/photo.jpg" alt="">
-                <p class="h4">Алёна Иванова</p>
-                <p class="h5">Основатель IvaMed</p>
+        </div>
+        <div class="mobile-header col-lg-12">
+            <a href=""><img src="img/logo.svg" alt=""></a>
+            <div>
+                <a href="#" class="mt-1 mr-5"><span class="icon-instagram site-menu-icon" style="font-size: 45px;"></span></a>
+                <nav class="nav">
+                    <input class="nav__check" type="checkbox" id="showmenu"/>
+                    <label class="nav__showmenu" for="showmenu">&#9776;</label>
+                    <label class="nav__back" for="showmenu"></label>
+                    <ul class="menu">
+                        <li><a class="menu__item" href="#">ШАПОЧКИ</a></li>
+                        <li><a class="menu__item" href="#">МЕД.ОДЕЖДА</a></li>
+                        <li><a class="menu__item" href="#">ОТЗЫВЫ</a></li>
+                        <li><a class="menu__item" href="#">КАК ЗАКАЗАТЬ</a></li>
+                        <li><a class="menu__item" href="#">О НАС</a></li>
+                        <li><a class="btn btn-primary rounded-pill pl-4 pr-4 pt-3 pb-3 mt-4" href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
             </div>
-
-           
-        </section>
-    </content>
+        </div>
+  
+    </header>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
