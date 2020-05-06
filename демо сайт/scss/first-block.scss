@@ -1,0 +1,107 @@
+$overlay-color: #662ba2;
+$color-h1-info: white;
+$button-bg-color: #7971ea;
+$button-bg-color-hover: #e83e8c;
+.first-block{
+    height: 800px;
+    position: relative;
+}
+
+%max-width-and-max-height{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+%flex-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.overlay{
+    
+    left: 0;
+    top: 0;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    @extend %max-width-and-max-height;
+    
+    &::before{
+        content: "";
+        background: $overlay-color;
+        opacity: .5;
+        @extend %max-width-and-max-height;
+    }
+}
+
+.first-block-content{
+    width: 100%;
+    height: 100%;
+    @extend %flex-display;
+    
+    .first-block-info-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 50;
+        color: $color-h1-info;
+        text-align: center;
+        align-items: center;
+        .head{
+            text-shadow: 1px 1px 4px black;
+        }
+        
+        p{
+            padding-top: 1rem;
+            line-height: 2rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+        
+    }
+}
+
+.button-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    a{
+        text-decoration: none;
+    }
+}
+
+.button{
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+    background: $button-bg-color;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+    
+    &:hover{
+        transition: .2s;
+        cursor: pointer;
+        background: $button-bg-color-hover;
+    }  
+}
+
+.first-block-info-img{
+    height: 300px;
+    width: 415px;
+    background: url(../img/masks.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+

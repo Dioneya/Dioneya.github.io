@@ -1,0 +1,54 @@
+
+$main-idea-bg: white;
+$name-photo-color: #7971ea;
+
+%main-idea-p{
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.main-idea{
+    min-height: 600px;
+    background: $main-idea-bg;
+    @extend %flex-display;
+    
+    .text-container p{
+        max-width: 1200px;
+        font-weight: 300;
+        color: gray;
+        line-height: 3rem;
+        @extend %main-idea-p;
+    }
+    
+    .img-container{
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        p{
+            color: $name-photo-color;
+            text-align: center;
+            @extend %main-idea-p;
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .main-idea{
+        .text-container p{
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+        .img-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+

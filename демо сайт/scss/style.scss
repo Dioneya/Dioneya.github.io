@@ -1,0 +1,57 @@
+@import "first-block.scss";
+@import "main-idea.scss";
+$background: violet; 
+$header-background: white;
+$menu-header-font-color: #7971ea;
+
+body{
+    background: $background;    
+    margin: 0;
+    padding: 0;
+}
+
+%flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header{
+    
+    @extend %flex-row;
+    background: $header-background;
+    height: 100px;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    .logo{
+        height: 45px;
+        width: 185px;
+        
+        img{
+            filter: invert(39%) sepia(5%) saturate(9265%) hue-rotate(210deg) brightness(80%) contrast(130%);
+            width: 100%;
+        }
+    } 
+}
+
+
+.menu ul{
+    @extend %flex-row; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1rem;
+    a{
+        text-decoration: none;
+        color: $menu-header-font-color;
+    }
+}
