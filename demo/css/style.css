@@ -1,30 +1,4 @@
 @charset "UTF-8";
-body {
-  background: purple;
-  height: 1000px;
-}
-
-header .mobile-header img, header .pc-header img {
-  width: 190px;
-  height: 50px;
-  filter: invert(39%) sepia(5%) saturate(9265%) hue-rotate(210deg) brightness(80%) contrast(130%);
-}
-
-.site-menu-icon {
-  font-family: "icomoon" !important;
-}
-
-.btn {
-  background-color: #7971ea;
-  border-color: #7971ea;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.btn:hover {
-  background-color: pink;
-  border-color: pink;
-}
-
 header .mobile-header, header .pc-header {
   background: white;
   display: flex;
@@ -102,4 +76,95 @@ header .mobile-header img {
   .pc-header {
     visibility: visible;
   }
+}
+#first-section .overlay::before, #first-section .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-height: 300px;
+  max-width: 415px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#first-section {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+#first-section span {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#first-section p {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+#first-section .overlay {
+  background: url(../img/home.jpg);
+  background-size: cover;
+}
+#first-section .overlay::before {
+  opacity: 0.5;
+  background: #662ba2;
+  content: "";
+}
+
+@media (max-width: 700px) {
+  #first-section {
+    flex-wrap: wrap;
+  }
+  #first-section span {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  #first-section p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}
+body {
+  background: purple;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+header .pc-header img, header .mobile-header img {
+  width: 190px;
+  height: 50px;
+  filter: invert(39%) sepia(5%) saturate(9265%) hue-rotate(210deg) brightness(80%) contrast(130%);
+}
+
+.site-menu-icon {
+  font-family: "icomoon" !important;
+}
+
+.btn {
+  background-color: #7971ea;
+  border-color: #7971ea;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: pink;
+  border-color: pink;
 }
