@@ -1,0 +1,79 @@
+$purple:#7971ea;
+%header{
+    background: white;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%header-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: fixed relative;
+    a{text-decoration: none;}
+    .icon-instagram{
+        color: #7971ea;
+        &::before{content: "\ea92";}
+    }
+    .icon-menu{
+            color: $purple;
+            font-size: 30px;
+            font-weight: 100;
+            cursor: pointer;
+            &:before {content: "\e9bd";}
+        }
+    
+    .pc-header{
+        position: absolute;
+        height: 100px;
+        @extend %header;
+        display: flex;
+        flex-direction: row;
+        div{
+            @extend %header-div;
+        }
+        img{@extend %img-logo;}
+        
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    color: $purple;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        
+    }
+    .mobile-header{
+        height: 72px;
+        @extend %header;
+        
+        div{@extend %header-div;}
+        
+        img{
+            margin: 0;
+            padding: 0;
+            @extend %img-logo;
+        }
+        
+    }
+}
+
+@media(max-width: 991px){
+    .mobile-header{visibility: visible;}
+    .pc-header{visibility: hidden}
+}
+@media(min-width: 992px){
+    .mobile-header{visibility:hidden;}
+    .pc-header{visibility: visible;}
+}
