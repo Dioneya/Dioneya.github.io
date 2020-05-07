@@ -51,6 +51,10 @@ header .pc-header ul li a {
   font-weight: bold;
   font-size: 1.1rem;
 }
+header .pc-header ul li a:hover {
+  color: pink;
+  transition: 0.5s;
+}
 header .mobile-header {
   height: 72px;
 }
@@ -135,9 +139,51 @@ img {
     font-size: 1rem;
   }
 }
+#about-me {
+  position: relative;
+  min-height: 550px;
+  font-size: 10px;
+  width: 100%;
+  flex-direction: column;
+  background: white;
+}
+#about-me p {
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 2rem;
+}
+#about-me div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#about-me div img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  #about-me {
+    flex-direction: row;
+  }
+  #about-me p {
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 2.5rem;
+    padding-left: 2rem;
+  }
+  #about-me div {
+    margin-right: 2rem;
+  }
+}
 body {
   background: purple;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 html {
