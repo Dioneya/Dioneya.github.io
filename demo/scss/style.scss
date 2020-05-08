@@ -1,11 +1,13 @@
 @import "header.scss";
 @import "first-section.scss";
 @import "second-section.scss";
+@import "items.scss";
 
 $btn-color: #7971ea;
 $btn-hover-color: pink;
 $purple:#7971ea;
-body{background: purple; font-family: sans-serif; overflow-x: hidden;}
+
+body{background: purple; overflow-x: hidden;}
 html{font-size: 10px;}
 
 %img-logo{
@@ -28,6 +30,7 @@ html{font-size: 10px;}
     &:hover{
         background-color: $btn-hover-color;
         border-color: $btn-hover-color;
+        
     }
 }
 

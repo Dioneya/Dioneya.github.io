@@ -27,6 +27,7 @@ header{
             font-size: 30px;
             font-weight: 100;
             cursor: pointer;
+        
             &:before {content: "\e9bd";}
         }
     
@@ -36,9 +37,9 @@ header{
         @extend %header;
         display: flex;
         flex-direction: row;
-        div{
-            @extend %header-div;
-        }
+        
+        div{@extend %header-div;}
+        
         img{@extend %img-logo;}
         
         ul{

@@ -18,8 +18,11 @@
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         
-        img{width: 70%; border-radius: 10px;}
+        img{width: 70%; max-height: 100%; border-radius: 10px;object-fit: cover;}
         
+        div{
+            width: 100%;
+        }
     }
 }
 
