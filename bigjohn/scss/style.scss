@@ -1,0 +1,46 @@
+@import "start-section.scss";
+@import "header.scss";
+
+$orange: #ff5c00 !global;
+$white: #ffffff !global;
+$gray: #c4c4c4 !global;
+$black: #000000 !global;
+
+$Montserrat: 'Montserrat Light', arial !global;
+$Candara: Candara !global;
+
+$font-size: 10px !global;
+
+@import url(http://allfont.ru/allfont.css?fonts=montserrat-light);
+
+@font-face {
+    font-family: Candara; 
+    src: url(fonts/candara.ttf);
+   }
+
+body{position: relative; font-family: $Candara;}
+.row{
+    margin: 0;
+}
+.button{
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: $orange;
+    border-radius: 80px;
+    margin-top: 1rem; margin-bottom: 1rem;
+    color: $gray;
+    text-decoration: none;
+    font-size: $font-size * 1.5;
+    &:hover{text-decoration: none; color: white;}
+}
+
+@media(max-width: 991px){
+    .nav_mob{visibility: visible;}
+    .pc_menu{visibility: hidden}
+}
+@media(min-width: 992px){
+    .nav_mob{visibility:hidden;}
+    .pc_menu{visibility: visible;}
+}
