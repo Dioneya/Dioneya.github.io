@@ -91,6 +91,9 @@
     max-height: 200px;
   }
 
+  .combo-box {
+    margin-bottom: 1rem;
+  }
   .combo-box p {
     font-size: 0.7rem;
   }
@@ -171,6 +174,103 @@
     visibility: visible;
   }
 }
+#second-section .swiper-container .swiper-wrapper .swiper-slide .dish-info div div, #second-section .swiper-container .swiper-wrapper .swiper-slide .dish-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#second-section {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  background: gray;
+  position: relative;
+}
+#second-section .swiper-button-next, #second-section .swiper-button-prev {
+  top: 90%;
+}
+#second-section .swiper-pagination-bullet {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+  opacity: 1;
+  background: url(../img/pizza/adriatiko.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#second-section swiper-container-horizontal > .swiper-pagination-bullets {
+  top: 85%;
+}
+#second-section .swiper-pagination-bullet-active {
+  width: 80px;
+  transition: 0.5s;
+  height: 80px;
+}
+#second-section .swiper-container {
+  max-width: 100%;
+  max-height: 800px;
+  height: 800px;
+  position: relative;
+}
+#second-section .swiper-container .swiper-wrapper {
+  max-height: 800px;
+  height: 100%;
+}
+#second-section .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100vw;
+  max-height: 800px;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#second-section .swiper-container .swiper-wrapper .swiper-slide .overlay {
+  opacity: 0.4;
+  content: "";
+}
+#second-section .swiper-container .swiper-wrapper .swiper-slide .dish-info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#second-section .swiper-container .swiper-wrapper .swiper-slide .dish-info div {
+  position: static;
+  max-width: 1300px;
+  width: 100%;
+  text-align: left;
+  align-items: flex-start;
+}
+#second-section .swiper-container .swiper-wrapper .swiper-slide .dish-info div div {
+  width: 200px;
+  align-items: center;
+}
+#second-section .swiper-container .swiper-wrapper .swiper-slide .dish-info div div p {
+  width: 100%;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+#second-section .swiper-container .swiper-wrapper .swiper-slide .dish-info div div span {
+  font-size: 1.5rem;
+  width: 100%;
+}
+#second-section .swiper-container .swiper-wrapper .swiper-slide .dish-info div div .button {
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  width: auto;
+}
+
+@media (max-width: 991px) {
+  #second-section .swiper-container {
+    margin-bottom: 0;
+  }
+}
 @font-face {
   font-family: Candara;
   src: url(fonts/candara.ttf);
@@ -200,6 +300,23 @@ body {
 .button:hover {
   text-decoration: none;
   color: white;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0.5;
+  background: black;
+  opacity: 0.7;
+  content: "";
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #ff5c00;
+  top: 50%;
 }
 
 @media (max-width: 991px) {
