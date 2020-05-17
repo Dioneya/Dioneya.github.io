@@ -361,6 +361,7 @@
 @media (max-width: 991px) {
   #footer {
     visibility: hidden;
+    width: 0;
   }
 }
 @media (min-width: 992px) {

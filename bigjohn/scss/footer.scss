@@ -57,7 +57,8 @@ $Montserrat: 'Montserrat Light', arial !global;
 
 @media(max-width: 991px){
     #footer{
-        visibility: hidden;
+        visibility: hidden; 
+        width: 0;
     }
 }
 @media(min-width: 992px){
