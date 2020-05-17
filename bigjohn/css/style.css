@@ -70,6 +70,7 @@
   border-radius: 10px;
   color: #c4c4c4;
   text-align: center;
+  z-index: 4;
 }
 .combo-box img {
   width: 125px;
@@ -269,6 +270,101 @@
 @media (max-width: 991px) {
   #second-section .swiper-container {
     margin-bottom: 0;
+  }
+}
+#third-section {
+  position: relative;
+  width: 100%;
+  background: url(../img/bigJohn.jpg);
+  min-height: 700px;
+  background-size: cover;
+}
+#third-section .overlay {
+  opacity: 0.4;
+}
+#third-section p {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-size: bold;
+  font-family: "Montserrat Light", arial;
+}
+
+@media (max-width: 991px) {
+  #third-section p {
+    font-size: 1.2rem;
+  }
+  #third-section .overlay {
+    opacity: 0.7;
+  }
+}
+#footer .footer-info, #footer {
+  display: flex;
+  flex-direction: row;
+}
+
+#footer {
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+#footer .footer-info {
+  position: static;
+  max-width: 1300px;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+}
+#footer .footer-info .logo {
+  width: 150px;
+  height: 100px;
+}
+#footer .footer-info .footer-elem {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#footer .footer-info .footer-elem p {
+  font-size: 1.2rem;
+  color: #c4c4c4;
+  text-align: center;
+  font-family: "Montserrat Light", arial;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background: black;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+.footer .footer-elem {
+  width: auto;
+}
+.footer .logo {
+  width: 125px;
+  height: 100px;
+}
+
+@media (max-width: 991px) {
+  #footer {
+    visibility: hidden;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    top: 0;
   }
 }
 @font-face {

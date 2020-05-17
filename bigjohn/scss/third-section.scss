@@ -1,0 +1,20 @@
+#third-section{
+    position: relative;
+    width: 100%;
+    background: url(../img/bigJohn.jpg);
+    min-height: 700px;
+    background-size: cover;
+    
+    .overlay{
+        opacity: .4;
+    }
+    
+    p{color: white; font-size: 1.4rem; margin-bottom: 1rem; font-size: bold; font-family: $Montserrat;}
+}
+
+@media(max-width: 991px){
+    #third-section{
+        p{font-size: 1.2rem;}
+        .overlay{opacity: .7;}
+    }
+}
