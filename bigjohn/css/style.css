@@ -349,9 +349,13 @@
 .footer .footer-elem {
   width: auto;
 }
+.footer p {
+  font-size: 0.8rem;
+  text-align: center;
+}
 .footer .logo {
-  width: 125px;
-  height: 100px;
+  width: 105px;
+  height: 80px;
 }
 
 @media (max-width: 991px) {

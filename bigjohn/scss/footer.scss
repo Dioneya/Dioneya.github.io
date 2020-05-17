@@ -50,8 +50,9 @@ $Montserrat: 'Montserrat Light', arial !global;
     .footer-elem{
          width: auto;
     }
+    p{font-size: .8rem; text-align: center;}
     justify-content: space-between;
-    .logo{ width: 125px; height: 100px;}
+    .logo{ width: 105px; height: 80px;}
 }
 
 @media(max-width: 991px){
@@ -65,5 +66,9 @@ $Montserrat: 'Montserrat Light', arial !global;
         height: 0;
         position: absolute;
         top: 0;
+        .footer-elem{
+            
+        }
+        
     }
 }
