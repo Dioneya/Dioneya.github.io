@@ -1,0 +1,245 @@
+@import url(http://allfont.ru/allfont.css?fonts=montserrat-light);
+.header_pc, .header_mobile {
+  position: fixed;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  align-items: center;
+  z-index: 5;
+}
+
+.header_pc .menu_pc .pc_nav_item:hover, .header_pc .menu_pc ul .active {
+  background: url(../img/line.png);
+  background-position: bottom center;
+  background-size: 60px auto;
+  background-repeat: no-repeat;
+}
+
+.header_mobile .logo {
+  width: 150px;
+  height: 100px;
+}
+
+.header_pc {
+  justify-content: center;
+}
+.header_pc .logo {
+  width: 225px;
+  height: 100px;
+}
+.header_pc .menu_pc ul {
+  justify-content: space-between;
+}
+.header_pc .menu_pc ul li {
+  text-align: center;
+}
+.header_pc .menu_pc ul a {
+  color: #c4c4c4;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: Candara;
+}
+.header_pc .menu_pc ul a:hover {
+  color: #ff5c00;
+}
+.header_pc .menu_pc ul .active {
+  color: #ff5c00;
+}
+.header_pc .menu_pc .pc_nav_item {
+  height: auto;
+  padding-bottom: 1rem;
+}
+@media (max-width: 991px) {
+  .header_mobile {
+    visibility: visible;
+  }
+
+  .header_pc {
+    visibility: hidden;
+  }
+}
+@media (min-width: 992px) {
+  .header_mobile {
+    visibility: hidden;
+  }
+
+  .header_pc {
+    visibility: visible;
+  }
+}
+#footer .footer-info, #footer {
+  display: flex;
+  flex-direction: row;
+}
+
+#footer {
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+#footer .footer-info {
+  position: static;
+  max-width: 1300px;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+}
+#footer .footer-info .logo {
+  width: 150px;
+  height: 100px;
+}
+#footer .footer-info .footer-elem {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#footer .footer-info .footer-elem p {
+  font-size: 1.2rem;
+  color: #c4c4c4;
+  text-align: center;
+  font-family: "Montserrat Light", arial;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background: black;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+.footer .footer-elem {
+  width: auto;
+}
+.footer p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.footer .logo {
+  width: 105px;
+  height: 80px;
+}
+
+@media (max-width: 991px) {
+  #footer {
+    visibility: hidden;
+    width: 0;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0.5;
+  background: black;
+  opacity: 0.8;
+  content: "";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#constructor {
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  background: url("../img/bg2.jpg");
+  background-size: cover;
+}
+
+.btn {
+  background: #ff5c0078;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-radius: 10px;
+  font-family: "Montserrat Light", arial;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #c4c4c4;
+  font-size: 15px;
+}
+.btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.swiper-container {
+  height: 90%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.swiper-container-vertical > .swiper-wrapper {
+  flex-direction: row;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: static;
+  width: 150px;
+  height: 200px;
+  background: #ff5c0078;
+  margin: 0.5rem;
+  border: 0px;
+}
+.card img {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.card .card-title {
+  width: 100%;
+  padding: 0;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Montserrat Light", arial;
+  font-weight: 200;
+}
+.card .purchase-btn {
+  background: #ff5c0078;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border: 0px;
+}
+.card .purchase {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

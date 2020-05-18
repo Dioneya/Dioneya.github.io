@@ -19,7 +19,7 @@
     <div class="header_pc col-12 mt-4 d-flex flex-row">
         <div class="d-flex flex-row align-items-center justify-content-space-between" style="max-width: 1300px; width: 100%">
             <div class="logo ml-4  mr-4">
-                <a href=""><img src="img/logo.png" class="img-fluid" alt=""> </a>  
+                <a href="index.html"><img src="img/logo.png" class="img-fluid" alt=""> </a>  
             </div>
             <div class="menu_pc container-fluid">
                 <ul class="d-flex flex-row">
@@ -29,7 +29,7 @@
                     <li><a href=""><div class="pc_nav_item">Закуски</div></a></li>
                     <li><a href=""><div class="pc_nav_item">Десерты</div></a></li>
                     <li><a href=""><div class="pc_nav_item">Барная<br>карта</div></a></li>
-                    <li><a href=""><div class="pc_nav_item">Конфигуратор<br>заказа</div></a></li>
+                    <li><a href="constructor.html"><div class="pc_nav_item">Конфигуратор<br>заказа</div></a></li>
                 </ul>
             </div>
             <div style="width: 75px; height: 75px;" class="mr-4 ml-4"><img src="img/shop.png" class="img-fluid" alt=""></div>
@@ -45,12 +45,12 @@
                 <input class="nav__check" type="checkbox" id="showmenu"/>
                 <label class="nav__showmenu" for="showmenu">&#9776;</label>
                 <ul class="menu">
-                    <li><a class="menu__item" href="#">Пицца</a></li>
+                    <li><a class="menu__item" href="index.html">Пицца</a></li>
                     <li><a class="menu__item" href="#">Домашняя<br>кухня</a></li>
                     <li><a class="menu__item" href="#">Салаты</a></li>
                     <li><a class="menu__item" href="#">Закуски</a></li>
                     <li><a class="menu__item" href="#">Барная<br>карта</a></li>
-                    <li><a class="menu__item" href="#">Конфигуратор<br>заказа</a></li>
+                    <li><a class="menu__item" href="constructor.html">Конфигуратор<br>заказа</a></li>
                 </ul>
             </nav>
         </div>
@@ -266,6 +266,7 @@
         // If we need pagination
         pagination: {
         el: '.swiper-pagination',
+            clickable: true,
         },
 
       })
