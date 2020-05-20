@@ -102,3 +102,26 @@ html{
         justify-content: center;
     }
 }
+
+#main-info{
+    width: 100%;
+}
+
+@media(max-width: 991px){
+    #nav-shop{
+        display: none;
+    }
+    .card{
+        width: 45%;
+    }
+    
+    .swiper-slide{
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 347px){
+    .card{
+        width: 100%;
+    }
+}

@@ -360,13 +360,13 @@
 
 @media (max-width: 991px) {
   #footer {
-    visibility: hidden;
+    display: none;
     width: 0;
   }
 }
 @media (min-width: 992px) {
   .footer {
-    visibility: hidden;
+    display: none;
     height: 0;
     position: absolute;
     top: 0;

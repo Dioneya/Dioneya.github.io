@@ -55,97 +55,94 @@
         </div>
     </div>
     
-    <section id="constructor" class="d-flex flex-column-reversed justify-content-center align-items-center">
+    <section id="constructor" class="d-flex flex-row justify-content-center">
         <div class="overlay"></div>
         <div class="row w-100 align-items-center" style="height: auto; max-width: 1300px;" id="main-info">
-            <div class="col-4 w-100" id="nav-shop">
-                <button @click="changeSlide(1)" class="btn menu-active">Пицца</button>
-                <button v-on:click="changeSlide(2)"  class="btn">Домашняя кухня</button>
-                <button class="btn" >Салаты</button>
-                <button class="btn">Закуски</button>
-                <button class="btn">Десерты</button>
-                <button class="btn">Барная карта</button>
+            <div class="col-12 col-lg-4 w-100" id="nav-shop">
+                <button @click="set_active(1)" class="btn menu-active">Пицца</button>
+                <button @click="set_active(2)"  class="btn">Домашняя кухня</button>
+                <button @click="set_active(3)" class="btn" >Салаты</button>
+                <button @click="set_active(4)" class="btn">Закуски</button>
+                <button @click="set_active(5)" class="btn">Десерты</button>
+                <button @click="set_active(6)" class="btn">Барная карта</button>
             </div>
-            <div class="col-5">
+            <div class="col-12 col-lg-5 w-100">
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper" id="slider-area">
+                    <div class="swiper-wrapper w-100" >
                         <!-- Slides -->
-                        <div class="swiper-slide" v-if="slideActive==1" id="pizzas">       
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/pizzas/adreatikojpg.jpg" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h2 class="card-title">Андриатико</h2>
-                                      <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
-                                  </div>
-                            </div>
-                            
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/pizzas/adreatikojpg.jpg" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h2 class="card-title">Андриатико</h2>
-                                      <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
-                                  </div>
-                            </div>
-                            
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/pizzas/adreatikojpg.jpg" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h2 class="card-title">Андриатико</h2>
-                                      <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
-                                  </div>
-                            </div>
-                            
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/pizzas/adreatikojpg.jpg" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h2 class="card-title">Андриатико</h2>
-                                      <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
-                                  </div>
-                            </div>
                         
-                          
-                            
+                        <!-- Пиццы -->
+                        <div class="swiper-slide" id="pizzas">       
+                            <div v-for="pizza in pizzas" class="card">
+                                  <img class="card-img-top" v-bind:src="pizza.img" alt="Card image cap">
+                                  <div class="card-body">
+                                      <h2 class="card-title">{{pizza.name}}</h2>
+                                      <div class="purchase"><button class="purchase-btn">{{pizza.price}} Руб.</button></div>
+                                  </div>
+                            </div>
                         </div>
-                        <div class="swiper-slide" v-else-if="slideActive==2" id="cuisine">
+                        
+                        <!-- Домашняя кухня -->
+                        <div class="swiper-slide" id="cuisine">
                            
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/salade/salade1.jpg" alt="Card image cap">
-                                  <div class="card-body"><h2 class="card-title">Домашняя кухня</h2>
-                                  <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
+                            <div v-for="home in homeCooking" class="card">
+                                  <img class="card-img-top" v-bind:src="home.img" alt="Card image cap">
+                                  <div class="card-body">
+                                      <h2 class="card-title">{{home.name}}</h2>
+                                      <div class="purchase"><button class="purchase-btn">{{home.price}} Руб.</button></div>
                                   </div>
-                            </div>
-                            
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/salade/salade1.jpg" alt="Card image cap">
-                                  <div class="card-body"><h2 class="card-title">Домашняя кухня</h2>
-                                  <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
-                                  </div>
-                            </div>
-                            
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/salade/salade1.jpg" alt="Card image cap">
-                                  <div class="card-body"><h2 class="card-title">Домашняя кухня</h2>
-                                  <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
-                                  </div>
-                            </div>
-                            
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/salade/salade1.jpg" alt="Card image cap">
-                                  <div class="card-body"><h2 class="card-title">Домашняя кухня</h2>
-                                  <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
-                                  </div>
-                            </div>
-                            
-                            <div class="card">
-                                  <img class="card-img-top" src="img/construcotor-items/salade/salade1.jpg" alt="Card image cap">
-                                  <div class="card-body"><h2 class="card-title">Домашняя кухня</h2>
-                                  <div class="purchase"><button class="purchase-btn">299 Руб.</button></div>
-                                  </div>
-                            </div>
-
-                        
+                            </div>            
                         </div>
+                        
+                        <!-- Салаты -->
+                        <div class="swiper-slide" id="salads">
+                           
+                            <div v-for="salad in salads" class="card">
+                                  <img class="card-img-top" v-bind:src="salad.img" alt="Card image cap">
+                                  <div class="card-body">
+                                      <h2 class="card-title">{{salad.name}}</h2>
+                                      <div class="purchase"><button class="purchase-btn">{{salad.price}} Руб.</button></div>
+                                  </div>
+                            </div>            
+                        </div>
+                        
+                        <!-- Закуки -->
+                        <div class="swiper-slide" id="snacks">
+                           
+                            <div v-for="snack in snacks" class="card">
+                                  <img class="card-img-top" v-bind:src="snack.img" alt="Card image cap">
+                                  <div class="card-body">
+                                      <h2 class="card-title">{{snack.name}}</h2>
+                                      <div class="purchase"><button class="purchase-btn">{{snack.price}} Руб.</button></div>
+                                  </div>
+                            </div>            
+                        </div>
+                        
+                        <!-- Десерты -->
+                        <div class="swiper-slide" id="desserts">
+                           
+                            <div v-for="dessert in desserts" class="card">
+                                  <img class="card-img-top" v-bind:src="dessert.img" alt="Card image cap">
+                                  <div class="card-body">
+                                      <h2 class="card-title">{{dessert.name}}</h2>
+                                      <div class="purchase"><button class="purchase-btn">{{dessert.price}} Руб.</button></div>
+                                  </div>
+                            </div>            
+                        </div>
+                        
+                        <!-- Барная карта -->
+                        <div class="swiper-slide" id="drinks">
+                           
+                            <div v-for="drink in drinks" class="card">
+                                  <img class="card-img-top" v-bind:src="drink.img" alt="Card image cap">
+                                  <div class="card-body">
+                                      <h2 class="card-title">{{drink.name}}</h2>
+                                      <div class="purchase"><button class="purchase-btn">{{drink.price}} Руб.</button></div>
+                                  </div>
+                            </div>            
+                        </div>
+                        
                     </div>
                     
                 </div>

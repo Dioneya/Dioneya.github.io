@@ -129,13 +129,13 @@
 
 @media (max-width: 991px) {
   #footer {
-    visibility: hidden;
+    display: none;
     width: 0;
   }
 }
 @media (min-width: 992px) {
   .footer {
-    visibility: hidden;
+    display: none;
     height: 0;
     position: absolute;
     top: 0;
@@ -242,4 +242,27 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#main-info {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  #nav-shop {
+    display: none;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .swiper-slide {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 347px) {
+  .card {
+    width: 100%;
+  }
 }
