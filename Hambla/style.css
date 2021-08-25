@@ -7,6 +7,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: "F77 Minecraft Regular";
+    text-shadow: 1px 1px 1px #000;
 }
 
 .logo{
@@ -157,17 +159,40 @@ footer{
     height: 50px;
 }
 
+p.mobile{
+    color: black;
+    text-shadow: 0px 0px 0px #000;
+}
+
 @media (min-width: 0px) and (max-width: 992px) {
+    body{
+        text-shadow: 2px 2px 2px #000;
+    }
     .social-link{
         width: 100px;
         height: 100px;
+    }
+    
+    .gray{
+        color: #495555;
     }
     
     h6{
         color: white;
         font-family: "F77 Minecraft Regular";
         text-shadow: 1px 1px 1px #000;
-        font-size: 1.2rem
+        font-size: 1.2rem;
     }
-
+    
+    p{
+        font-size: 1.5rem;
+        color: black;
+        text-shadow: 0px 0px 0px #000;
+    }
+    
+    .mobile-ava{
+        height: auto;
+        width: 70%;
+    }
+    
 }
