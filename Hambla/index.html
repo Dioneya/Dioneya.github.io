@@ -7,17 +7,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="fonts/Minecraft/stylesheet.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="burger.css">
 </head>
 <body>
-    
+    <!--    Made by Erik Terwan    -->
+    <!--   24th of November 2015   -->
+    <!--        MIT License        -->
+    <nav class="d-lg-none m-b" role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#"><li>About us</li></a>
+          <a href="#"><li>Portfolio</li></a>
+          <a href="#"><li>Contacts</li></a>
+          <a href="#"><li>HaHambla</li></a>
+        </ul>
+      </div>
+    </nav>
     <header class="mh-100 mw-100">
        <div class="container overflow-hidden mh-100 " >
            <div class="row mh-100 justify-content-center mt-4">
-               <div class="col-md-3 logo">
+               <div class="col-md-3 logo mt-4 mb-4">
                </div>
            </div>
            
-           <div class="row mh-100 justify-content-center mt-4">
+           <div class="row mh-100 justify-content-center mt-4 d-none d-lg-block">
                <nav class="nav nav-pills nav-fill col-md-12">
                  <a class="nav-link active" aria-current="page" href="#">About us</a>
                  <a class="nav-link" href="#">Portfolio</a>
@@ -30,7 +63,7 @@
     </header>
     <main class="mh-100 mw-100">
        
-        <div class="container overflow-hidden mh-100" style="position: relative;">
+        <div class="container-lg overflow-hidden mh-100" style="position: relative;">
            <div class="back-decor d-none d-lg-block">
                <div class="container overflow-hidden mh-100 ">
                   <div class="row mh-100 justify-content-center">
@@ -63,7 +96,7 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
     </main>
     
     <main class="d-lg-none d-block flex-grow-1">
-        <div class="container overflow-hidden mh-100">
+        <div class="container-fluid overflow-hidden mh-100">
             <div class="row mt-5 align-items-center justify-content-center">
                 <div class="card mb-5 col-12">
                   <div class="text-center">
@@ -71,8 +104,8 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
                   </div>
                   
                   <div class="card-body">
-                    <h2 class="card-title mw-100 text-center" style="color:orange;" >Ilya Krivov</h2>
-                    <h3 class="text-center"><small style="color: #0172b1;">Founder</small></h3>
+                    <h2 class="card-title mw-100 mt-4" style="color:orange;" >Ilya Krivov</h2>
+                    <h3 class="mt-4 mb-4"><small style="color: #0172b1;">Founder</small></h3>
                     <p class="card-text mobile">
                        Created games before the birth of the Titans.
                        Created the best team of game developers.
@@ -89,8 +122,8 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
                   </div>
                   
                   <div class="card-body">
-                    <h2 class="card-title mw-100 text-center" style="color:orange;" >Katherine Onasenko</h2>
-                    <h3 class="text-center"><small style="color: #0172b1;">Project Manager</small></h3>
+                    <h2 class="card-title mw-100 mt-4" style="color:orange;" >Katherine Onasenko</h2>
+                    <h3 class="mt-4 mb-4"><small style="color: #0172b1;">Project Manager</small></h3>
                     <p class="card-text mobile">
                        In ancient times, this character ruled the worlds.<br/>
                         Now she manages projects.<br/>
@@ -106,8 +139,8 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
                   </div>
                   
                   <div class="card-body">
-                    <h2 class="card-title mw-100 text-center" style="color:orange;" >Nikita Kunov</h2>
-                    <h3 class="text-center"><small style="color: #0172b1;">Developer</small></h3>
+                    <h2 class="card-title mw-100 mt-4" style="color:orange;" >Nikita Kunov</h2>
+                    <h3 class="mt-4 mb-4"><small style="color: #0172b1;">Developer</small></h3>
                     <p class="card-text mobile">
                        An amazing hero who combines not only programming skills, but also a talent for drawing. He has a secret ability to enter nirvana and remain calm when fixing bugs.
                     </p>
@@ -121,8 +154,8 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
                   </div>
                   
                   <div class="card-body">
-                    <h2 class="card-title mw-100 text-center" style="color:orange;" >Artavazd Harutyunyan</h2>
-                    <h3 class="text-center"><small style="color: #0172b1;">Developer</small></h3>
+                    <h2 class="card-title mw-100 mt-4" style="color:orange;" >Artavazd Harutyunyan</h2>
+                    <h3 class="mt-4 mb-4"><small style="color: #0172b1;">Developer</small></h3>
                     <p class="card-text mobile">
                        Before the beginning of everything, a single entity lived in absolute emptiness.The primordial consciousness. Infinite, incredible, it followed only its mysterious goals — programming.
                     </p>
@@ -227,7 +260,7 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container-lg  mb-4 mb-lg-0">
             <div class="row justify-content-center align-items-center" style="min-height: 150px;">
                 <div class="col-12 col-lg-4">
                     <div class="row justify-content-center">
@@ -237,7 +270,7 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12 social-links">
-                           <div class="row justify-content-center">
+                           <div class="row justify-content-evenly justify-content-lg-center">
                                <div class="social-link">
                                     <a href="https://www.facebook.com/groups/631644054892929">
                                         <img src="img/facebook.png" class="img-fluid" alt="">
@@ -275,8 +308,8 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
                     
                 </div>
                 
-                <div class="col-12 col-lg-8">
-                       <div class="row mt-4 mt-lg-0">
+                <div class="col-12 col-lg-8 ">
+                       <div class="row mt-4 mt-lg-0 d-none d-lg-flex">
                            <div class="col-6">
                                <h6>Contact for game development direction:</h6>
                            </div>
@@ -284,7 +317,7 @@ text-shadow: 1px 1px 1px #000;">=== === === === ===</p>
                                <h6>hambla.company@gmail.com</h6>
                            </div>
                        </div>
-                       <div class="row  mb-4 mb-lg-0 ">
+                       <div class="row  mb-4 mb-lg-0 d-none d-lg-flex">
                            <div class="col-6">
                                <h6>Contact for outsourcing direction:</h6>
                            </div>
