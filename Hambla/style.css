@@ -165,6 +165,8 @@ p.mobile{
     text-shadow: 0px 0px 0px #000;
 }
 
+
+
 @media (min-width: 0px) and (max-width: 992px) {
     body{
         text-shadow: 2px 2px 2px #000;
@@ -210,5 +212,22 @@ p.mobile{
     
     h5{
         font-size: 3rem;
+    }
+    
+    .logo{
+        height: 250px;
+        background-image: url(img/logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    .f-contacts{
+        text-align: center;
+    }
+    
+    .f-contacts-h{
+        color: #0172b1;
+        font-weight: bolder;
     }
 }
